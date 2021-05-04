@@ -8,13 +8,13 @@
 assign their values according to your own country (population in millions)
 2. Log their values to the console */
 
-/* const country = "Bulgaria";
+const country = "Bulgaria";
 const continent = "Europe";
 let population = 7;
 
-console.log(country);
-console.log(continent);
-console.log(population); */
+//console.log(country);
+//console.log(continent);
+//console.log(population); 
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -28,14 +28,14 @@ to the console */
 
 
 // 1
-//const isIsland = false;
-//let language;
+const isIsland = false;
+let language;
 
 // 2
-/* console.log(isIsland);
-console.log(population);
-console.log(country); */
-//console.log(language);
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country); 
+console.log(typeof language);
 
 /////////////////////////////////////////////////////////////////////
 
@@ -48,10 +48,13 @@ console.log(country); */
 3. Try to change one of the changed variables now, and observe what happens */
 
 //language = "Bulgarian";
-//console.log(language);
-//const language = "Bulgarian";
-//console.log(language);
-//console.log(typeof language);
+//const country = 'Bulgaria';
+//const continent = "Europe";
+//const isIsland = false;
+//isIsland = true;
+console.log(language);
+language = "Bulgarian";
+
 
 
 ////////////////////////////////////////////////////////////////
@@ -69,3 +72,20 @@ have less people than the average country?
 which contains a string with this format: 'Portugal is in Europe, and its 11 million 
 people speak portuguese
 */
+
+console.log(population / 2);
+population++;
+console.log(population);
+console.log(population > 6);
+console.log(population < 33);
+const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+console.log(description);
+
+
+
+///////////////////////////////////////////////////////////////////////
+//LECTURE: Strings and Template Literals
+
+/* 1. Recreate the 'description' variable from the last assignment, this time 
+using the template literal syntax */
+
