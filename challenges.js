@@ -26,24 +26,24 @@ m tall
 //const jhonsWeight = 92;
 //const jhonsHeight = 1.95;
 
-const marksWeight = 95;
-const marksHeight = 1.88;
+//const marksWeight = 95;
+//const marksHeight = 1.88;
 
-const jhonsWeight = 85;
-const jhonsHeight = 1.76;
+//const jhonsWeight = 85;
+//const jhonsHeight = 1.76;
 
 
 //2
 //const marksBmi = marksWeight / marksHeight ** 2;
-const marksBmi = marksWeight / (marksHeight * marksHeight);
+//const marksBmi = marksWeight / (marksHeight * marksHeight);
 //const jhonsBmi = jhonsWeight / jhonsHeight ** 2;
-const jhonsBmi = marksWeight / (jhonsHeight * jhonsHeight);
+//const jhonsBmi = marksWeight / (jhonsHeight * jhonsHeight);
 
 //3
 
-let markHigherBMI = marksBmi > jhonsBmi;
+//let markHigherBMI = marksBmi > jhonsBmi;
 
 //console.log(marksBmi);
 //console.log(jhonsBmi);
-console.log(marksBmi, jhonsBmi, markHigherBMI);
+//console.log(marksBmi, jhonsBmi, markHigherBMI);
 //console.log(markHigherBMI);

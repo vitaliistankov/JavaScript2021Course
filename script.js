@@ -59,7 +59,7 @@
      console.log(ageSarah >= 18);
 
      const isFullAge = ageSarah >=18;
-     */
+    
 
      const now = 2037;
      const ageJonas = now - 1991;
@@ -74,6 +74,31 @@
      const averagAge = (ageJonas + ageSarah) / 2
      console.log(ageJonas, ageSarah, averagAge);
 
+ */
+
+     //////////////////////////////////////////////////
+
+     // 17. Strings and Template Literals
+
+     const firstName = 'Vitaly';
+     const job = 'student';
+     const birthYear = 1971;
+     const year = 2037;
+     
+     const vitaly = "I'm " + firstName + ', a ' +  (year - birthYear) + ' years old ' + job + '!';
+     console.log(vitaly);
+     const vitalyNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+     console.log(vitalyNew);
+
+     console.log(`Just regular string...`)
+
+     console.log('String with \n\
+     multiple \n\
+     lines');
+
+     console.log(`String
+     multiple
+     lines`)
 
 
 

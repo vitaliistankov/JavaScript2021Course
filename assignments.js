@@ -8,13 +8,13 @@
 assign their values according to your own country (population in millions)
 2. Log their values to the console */
 
-const country = "Bulgaria";
+/* const country = "Bulgaria";
 const continent = "Europe";
 let population = 7;
 
 console.log(country);
 console.log(continent);
-console.log(population);
+console.log(population); */
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -28,13 +28,13 @@ to the console */
 
 
 // 1
-const isIsland = false;
+//const isIsland = false;
 //let language;
 
 // 2
-console.log(isIsland);
+/* console.log(isIsland);
 console.log(population);
-console.log(country);
+console.log(country); */
 //console.log(language);
 
 /////////////////////////////////////////////////////////////////////
@@ -49,9 +49,9 @@ console.log(country);
 
 //language = "Bulgarian";
 //console.log(language);
-const language = "Bulgarian";
-console.log(language);
-console.log(typeof language);
+//const language = "Bulgarian";
+//console.log(language);
+//console.log(typeof language);
 
 
 ////////////////////////////////////////////////////////////////
