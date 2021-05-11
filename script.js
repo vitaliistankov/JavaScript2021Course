@@ -99,7 +99,9 @@
      console.log(`String
      multiple
      lines`);
-
+      //////////////////////////////////////////////////////////////
+      
+      //18. Taking decisions
 
 const age = 15;
 
@@ -121,6 +123,56 @@ if (birthYear <=2000) {
 console.log(century);
 
  */
+//////////////////////////////////////////////////////////////////
+
+//20 Type conversion and coercion (Преобразование или приведение)
+
+/* const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Vitalii'));
+console.log(typeof NaN);
+
+console.log(String(23), 23); */
+
+//type coercion
+/* console.log('I am ' + 49 + ' years old')
+console.log('49' + '10' + 9);
+console.log('49' / '2');
+console.log('49' > '18');
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n); */
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//21. Truthy and Falsy Values 
+
+// 5 falsy values: 0, '', undefined. null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Vit'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+      console.log("Don't spent it all ;)");
+} else {
+     console.log('You should get a job!');
+}
+
+let height = 0;
+if (height) {
+      console.log('YAY! Height is defined!');
+}else{
+      console.log('Height is UNDEFINED')
+}
+      
+
 
 
 
