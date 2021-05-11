@@ -63,12 +63,12 @@ GOOD LUCK  */
 
 
 
-if(marksBmi > jhonsBmi) {
+/* if(marksBmi > jhonsBmi) {
     console.log(`Mark's BMI (${marksBmi}) is higher than John's!`)
 } else {
     console.log(`John's (${jhonsBmi}) BMI is higher than Mark's!`)
 }
-
+ */
 
 
 
