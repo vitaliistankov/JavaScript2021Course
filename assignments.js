@@ -112,15 +112,23 @@ minus the country's population)
 2. After checking the result, change the population temporarily to 13 and then to 
 130. See the different results, and set the population back to original */
 
-let population = 130;
+let population = 13;
 const country = "Bulgaria";
 
-if(population > 33) {
+/* if(population > 33) {
     description =`${(country)}'s population is above average `;
 } else{
     description = `${(country)} population is ${(33-population)} below average `;
 }
 
-console.log(description);
+console.log(description); */
+
+if (population > 33) {
+    console.log(`${country}'s population is above average`);
+}else{
+    console.log(
+        `${country}'s population is ${33 - population} million below average`
+    );
+}
 
 
