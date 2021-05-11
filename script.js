@@ -74,7 +74,7 @@
      const averagAge = (ageJonas + ageSarah) / 2
      console.log(ageJonas, ageSarah, averagAge);
 
- */
+ 
 
      //////////////////////////////////////////////////
 
@@ -99,7 +99,7 @@
      console.log(`String
      multiple
      lines`);
- */
+
 
 const age = 15;
 
@@ -119,6 +119,8 @@ if (birthYear <=2000) {
       century = 21;
 }
 console.log(century);
+
+ */
 
 
 

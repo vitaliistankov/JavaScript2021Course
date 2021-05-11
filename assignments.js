@@ -8,9 +8,9 @@
 assign their values according to your own country (population in millions)
 2. Log their values to the console */
 
-const country = "Bulgaria";
-const continent = "Europe";
-let population = 7;
+//const country = "Bulgaria";
+//const continent = "Europe";
+//let population = 7;
 
 //console.log(country);
 //console.log(continent);
@@ -28,14 +28,14 @@ to the console */
 
 
 // 1
-const isIsland = false;
-let language;
+//const isIsland = false;
+//let language;
 
 // 2
-console.log(typeof isIsland);
-console.log(typeof population);
-console.log(typeof country); 
-console.log(typeof language);
+//console.log(typeof isIsland);
+//console.log(typeof population);
+//console.log(typeof country); 
+//console.log(typeof language);
 
 /////////////////////////////////////////////////////////////////////
 
@@ -52,8 +52,8 @@ console.log(typeof language);
 //const continent = "Europe";
 //const isIsland = false;
 //isIsland = true;
-console.log(language);
-language = "Bulgarian";
+//console.log(language);
+//language = "Bulgarian";
 
 
 
@@ -73,7 +73,7 @@ which contains a string with this format: 'Portugal is in Europe, and its 11 mil
 people speak portuguese
 */
 
-console.log(population / 2);
+/* console.log(population / 2);
 population++;
 console.log(population);
 console.log(population > 6);
@@ -87,7 +87,7 @@ const description1 =
  ' million people speak ' +
  language;
  console.log(description1)
-
+ */
 
 
 
@@ -97,8 +97,8 @@ const description1 =
 /* 1. Recreate the 'description' variable from the last assignment, this time 
 using the template literal syntax */
 
-const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
-console.log(description);
+//const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+//console.log(description);
 
 
 ////////////////////////////////////////////////////////////////////
@@ -108,7 +108,19 @@ console.log(description);
 console: 'Portugal's population is above average'. Otherwise, log a string like 
 'Portugal's population is 22 million below average' (the 22 is the average of 33 
 minus the country's population)
+
 2. After checking the result, change the population temporarily to 13 and then to 
 130. See the different results, and set the population back to original */
+
+let population = 130;
+const country = "Bulgaria";
+
+if(population > 33) {
+    description =`${(country)}'s population is above average `;
+} else{
+    description = `${(country)} population is ${(33-population)} below average `;
+}
+
+console.log(description);
 
 
