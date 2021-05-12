@@ -152,7 +152,7 @@ console.log(n); */
 
 // 5 falsy values: 0, '', undefined. null, NaN
 
-console.log(Boolean(0));
+/* console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('Vit'));
 console.log(Boolean({}));
@@ -170,10 +170,31 @@ if (height) {
       console.log('YAY! Height is defined!');
 }else{
       console.log('Height is UNDEFINED')
-}
+} */
       
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//
 
 
-
-
+const age = '18';
+if (age === 18) console.log('You just became an adult:D (strict)');
+if (age == 18) console.log('You just became an adult:D (loose)');
     
+const favourite = Number(prompt("What your favourite namber?"));
+console.log(typeof favourite);
+
+if (favourite === 49) {
+      console.log('Awesome! 49 is an amazing number!') 
+} else if (favourite === 7) {
+      console.log('7 is also a cool number')
+} else if (favourite === 9) {
+      console.log('9 is also a cool number')
+} else {
+      console.log('Number is not 49 or 7')
+}
+
+if (favourite !==49) console.log('Why not 49?')
+
+
+
