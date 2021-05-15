@@ -97,34 +97,50 @@ GOOD LUCK  */
 
 //1. 
 
-const dolphinsAverageScore = (97 +112 + 101)/2;
-console.log(dolphinsAverageScore);
-const koalasAverageScore = (109 + 95 + 106)/2;
-console.log(koalasAverageScore);
+/* const dolphinsAverageScore = (96 +108 + 89) / 3;
+const koalasAverageScore = (88 + 91 + 110) / 3;
+console.log(dolphinsAverageScore, koalasAverageScore);
 
-/* if(dolphinsAverageScore > koalasAverageScore) 
+
+if(dolphinsAverageScore > koalasAverageScore) 
     console.log("Dolphins wins!")
 else if (dolphinsAverageScore < koalasAverageScore)
     console.log("Koalas wins!")
 else if (dolphinsAverageScore === koalasAverageScore) 
+    console.log("Draw!"); */
+
+
+//BONUS 1
+
+/* const minScore = 100;
+const dolphinsAverageScore = (97 +112 + 101) / 3;
+const koalasAverageScore = (109 + 95 + 106) / 3;
+
+if(dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= minScore) 
+    console.log("Dolphins wins!")
+else if (dolphinsAverageScore < koalasAverageScore && koalasAverageScore >= minScore)
+    console.log("Koalas wins!")
+else if (dolphinsAverageScore === koalasAverageScore) 
     console.log("Draw!") */
+
+
+//BONUS 2
+
+
+const dolphinsAverageScore = (97 + 112 + 81) / 3;
+const koalasAverageScore = (109 + 95 + 86) / 3;
 
 const minScore = 100;
 
-/* if(dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore > minScore) 
+if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= minScore) {
     console.log("Dolphins wins!")
-else if (dolphinsAverageScore < koalasAverageScore && koalasAverageScore > minScore)
+}
+else if (dolphinsAverageScore < koalasAverageScore && koalasAverageScore >= minScore){
     console.log("Koalas wins!")
-else if (dolphinsAverageScore === koalasAverageScore) 
-    console.log("Draw!") */
-
-var isDraw = true;
-
-    if(dolphinsAverageScore > koalasAverageScore) 
-    console.log("Dolphins wins!")
-else if (dolphinsAverageScore < koalasAverageScore)
-    console.log("Koalas wins!")
-    //if(dolphinsAverageScore === koalasAverageScore) {isDraw = true;}
-else if (dolphinsAverageScore === koalasAverageScore && isDraw) 
+}
+else if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore >= minScore && koalasAverageScore >= minScore){
     console.log("Draw!")
-    else console.log("No one wins!")
+}else{
+    console.log("No one wins!")
+} 
+ 
