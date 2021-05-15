@@ -173,6 +173,8 @@ if (numNeighbours === 1) {
 } else if (numNeighbours == 0) {
     console.log('No borders'); */
 
+ /////////////////////////////////////////////////////////////////////////////////////////////   
+
 // LECTURE: Logical Operators
 
 // 1. Comment out the previous code so the prompt doesn't get in the way
@@ -197,10 +199,10 @@ const isIsland = true;
 
 
 
-if (language === "English" && language === "English" && population < 50 && !isIsland)
+/* if (language === "English" && language === "English" && population < 50 && !isIsland)
 console.log(`You should live in ${country} :)`);
 else 
-console.log (`${country} does not meet your criteria :(`);
+console.log (`${country} does not meet your criteria :(`); */
 
     
 
