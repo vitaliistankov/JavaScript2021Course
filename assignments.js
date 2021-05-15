@@ -188,14 +188,16 @@ if (numNeighbours === 1) {
 // change some variables in order to make the condition true (unless you live in 
 // Canada :D
 
-const country = "Bulgaria";
-const language = "Bulgarian";
-const population = 8;
-const isIsland = false;
+//const country = "Bulgaria";
+const country = "England";
+//const language = "Bulgarian";
+const language = "English";
+const population = 25;
+const isIsland = true;
 
 
 
-if (language === "English" && language === "English" && population < 50)
+if (language === "English" && language === "English" && population < 50 && !isIsland)
 console.log(`You should live in ${country} :)`);
 else 
 console.log (`${country} does not meet your criteria :(`);
