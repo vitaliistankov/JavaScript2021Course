@@ -227,7 +227,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 
 // 26. The switch Statement
 
-const day = 'thursday';
+/* const day = 'thursday';
 
 switch(day){
       case 'monday': // day === 'monaday'
@@ -279,9 +279,9 @@ if(day === 'monday') {
       console.log('Enjoy the weekend :D');
 }else{
 console.log('Not a valid day!');
-}
+} */
 
-const day = 'friday';
+/* const day = 'friday';
 
 if(day === 'monday') {
       console.log('You can hold your head')
@@ -290,11 +290,24 @@ if(day === 'monday') {
 }else if (day === 'thursday') {
       console.log('Watch the walls instead')
 }else if (day ==='friday') {
-      console.log('Im in love');
+      console.log(`I'm in love`);
 }else if (day === 'saturday') {
       console.log('Wait');
 }else if (day === 'sunday') {
       console.log('Always comes too late');
 }else{
 console.log('(Oh)Do-do, do-do, do-do, do, Do-do, do-do, do-do, do(Oh, oh, whoa, whoa)!');
-}
+} */
+
+/////////////////////////////////////////////////////////////////////
+
+//28. The Conditional (Ternary) Operator
+
+//const age = 23;
+// age >= 18 ? console.log('I like to drink vodka 🥃🥃🥃' ) : 
+// console.log('You can only drink shit 👽!')
+
+ //const drink = age >= 18 ? 'vodka 🥃🥃🥃' : 'shit 👽!';
+ //console.log(drink);
+
+ 
