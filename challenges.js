@@ -165,8 +165,8 @@ Hints:
 GOOD LUCK */
 
 
-const bill = 275;
-let tip;
+//const bill = 275;
+//let tip;
 
 
 // if (bill >= 50 && bill <= 300) {
@@ -180,12 +180,19 @@ let tip;
 //console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${totalValue}`);
 
 
-(bill >= 50 && bill <= 300) ? tip = bill * 15 / 100 : tip = bill * 20 / 100;
+/* (bill >= 50 && bill <= 300) ? tip = bill * 15 / 100 : tip = bill * 20 / 100;
 let totalValue = bill + tip;
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${totalValue}`);
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${totalValue}`); */
 
 //console.log(`${country}'s population is ${population > 33? 'above': 'below'} average`,);
 
 /* bill >= 50 && bill <= 300 ? console.log(`The bill was ${bill}, the tip was ${bill}*0.2, and the total value ${bill} + ${tip}`) :
     console.log(`The bill was ${bill}, the tip was ${bill}*0.15, and the total value ${bill} + ${tip}`);
  */
+
+const bill = 275;
+
+const tip = bill <= 300 && bill >= 50 ? bill * .15 :
+    bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
