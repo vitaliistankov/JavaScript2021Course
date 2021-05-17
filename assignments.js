@@ -191,11 +191,11 @@ if (numNeighbours === 1) {
 // Canada :D
 
 //const country = "Bulgaria";
-const country = "England";
+//const country = "England";
 //const language = "Bulgarian";
-const language = "English";
-const population = 25;
-const isIsland = true;
+//const language = "English";
+//const population = 25;
+//const isIsland = true;
 
 
 
@@ -204,8 +204,27 @@ console.log(`You should live in ${country} :)`);
 else 
 console.log (`${country} does not meet your criteria :(`); */
 
-    
+/////////////////////////////////////////////////////////////////////////////
 
+//LECTURE: The Conditional (Ternary) Operator
 
+/* 1. If your country's population is greater than 33 million, use the ternary operator 
+to log a string like this to the console: 'Portugal's population is above average'. 
+Otherwise, simply log 'Portugal's population is below average'. Notice how only
+one word changes between these two sentences!
+2. After checking the result, change the population temporarily to 13 and then to 
+130. See the different results, and set the population back to original;
+ */
+
+const country = "Bulgaria";
+const population = 7;
+
+population > 33 ? console.log (`${country}'s population is above average`) : 
+console.log(`${country}'s population is below average`);
+
+average = population > 33 ? 'above' : 'below';
+console.log(average);
+
+console.log(`${country}'s population is ${population > 33? 'above': 'below'} average`,); // the code from solutions
 
 
