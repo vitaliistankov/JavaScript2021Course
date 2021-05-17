@@ -127,7 +127,7 @@ else if (dolphinsAverageScore === koalasAverageScore)
 //BONUS 2
 
 
-const dolphinsAverageScore = (97 + 112 + 81) / 3;
+/* const dolphinsAverageScore = (97 + 112 + 81) / 3;
 const koalasAverageScore = (109 + 95 + 86) / 3;
 
 const minScore = 100;
@@ -142,5 +142,5 @@ else if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore >= 
     console.log("Draw!")
 }else{
     console.log("No one wins!")
-} 
+}  */
  
