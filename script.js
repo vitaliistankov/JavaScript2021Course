@@ -45,7 +45,7 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(1971);
 
 console.log(age1, age2);
-*/
+
 
 //Function expression
 const calcAge2 = function (birthYear) {
@@ -67,3 +67,22 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1971, 'Vitalii'));
 console.log(yearsUntilRetirement(1979, 'Artem'));
+*/
+
+// 36. Functions Calling Other Functions
+
+
+function cutFruitPieces(fruit) {
+    return fruit * 3;
+}
+
+
+function fruitProcessor(apples, oranges) {
+
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+    return juice;
+}
+console.log(fruitProcessor(2, 3));
