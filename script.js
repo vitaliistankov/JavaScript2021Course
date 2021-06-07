@@ -69,10 +69,12 @@ console.log(yearsUntilRetirement(1971, 'Vitalii'));
 console.log(yearsUntilRetirement(1979, 'Artem'));
 */
 
+////////////////////////////////////////////////////////////////////
+
 // 36. Functions Calling Other Functions
 
 
-function cutFruitPieces(fruit) {
+/* function cutFruitPieces(fruit) {
     return fruit * 3;
 }
 
@@ -85,4 +87,30 @@ function fruitProcessor(apples, oranges) {
     const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
     return juice;
 }
-console.log(fruitProcessor(2, 3));
+console.log(fruitProcessor(2, 3)); */
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// 37. Reviewing Functions
+
+/* const calcAge = function (birthYear) {
+    return 2027 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired`);
+        return -1;
+    }
+
+}
+console.log(yearsUntilRetirement(1971, 'Vitaly'));
+console.log(yearsUntilRetirement(1960, 'Mike')); */
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
