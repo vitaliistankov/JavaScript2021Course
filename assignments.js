@@ -321,11 +321,22 @@ function percentageOfWorld1(population) {
     return (population / 7900) * 100;
 
 }
-
+/* 
 function describePopulation(country, population) {
     const percentage = percentageOfWorld1(population);
     return `${country} has ${population} million people, which is about ${percentage} % of the world.`
 };
 console.log(describePopulation('China', 1441));
+console.log(describePopulation('US', 332));
+console.log(describePopulation('RU', 145));
+ */
 
+const describePopulation = function (country, population) {
+    const percentage = percentageOfWorld1(population);
+    const description = `${country} has ${population} million people, which is about ${percentage} % of the world.`;
+    console.log(description);
+};
+describePopulation('China', 1441);
+describePopulation('US', 332);
+describePopulation('Russia', 145);
 
