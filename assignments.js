@@ -352,7 +352,7 @@ world population for these 4 population values.Use the function
 'percentageOfWorld1' that you created earlier to compute the 4
 percentage values */
 
-const countries = ['China', 'US', 'Russia', 'Ukraine'];
+/* const countries = ['China', 'US', 'Russia', 'Ukraine'];
 const populations = ['1441', '332', '145', '40'];
 console.log(populations.length);
 
@@ -366,7 +366,19 @@ const chinaPercentage = percentageOfWorld1(percentages[0]);
 const usPercentage = percentageOfWorld1(percentages[1]);
 const ruPercentage = percentageOfWorld1(percentages[2]);
 const uaPercentage = percentageOfWorld1(percentages[percentages.length - 1]);
-console.log(chinaPercentage, usPercentage, ruPercentage, uaPercentage);
+console.log(chinaPercentage, usPercentage, ruPercentage, uaPercentage); */
+
+const populations = ['1441', '332', '145', '40'];
+console.log(populations.length === 4);
+
+const percentages = [
+    percentageOfWorld1(populations[0]),
+    percentageOfWorld1(populations[1]),
+    percentageOfWorld1(populations[2]),
+    percentageOfWorld1(populations[3])
+];
+console.log(percentages);
+
 
 //LECTURE: Basic Array Operations (Methods)
 /* 1. Create an array containing all the neighbouring countries of a country of your
@@ -384,7 +396,7 @@ change the array at that index position.For example, you can search for
 'Sweden' in the array, and then replace it with 'Republic of Sweden'. */
 
 const neighbours = new Array('Romania', 'Serbia', 'Greece');
-
+/* 
 neighbours.push('Utopia'); //add
 console.log(neighbours)
 
@@ -409,5 +421,8 @@ neighbours.shift();
 neighbours.shift();
 neighbours.unshift("Republic of Serbia");
 neighbours.unshift("Romania");
+console.log(neighbours); */
+
+neighbours[neighbours.indexOf('Serbia')] = 'Republic of Serbia';
 console.log(neighbours);
 
