@@ -275,11 +275,11 @@ the same populations) */
 
 //Function declaration
 
-const chinaPercentage = percentageOfWorld1(1441);
+/* const chinaPercentage = percentageOfWorld1(1441);
 const usPercentage = percentageOfWorld1(332);
 const russiaPercentage = percentageOfWorld1(145);
 
-console.log(chinaPercentage, usPercentage, russiaPercentage);
+console.log(chinaPercentage, usPercentage, russiaPercentage); */
 
 
 /* function percentageOfWorld1(population) {
@@ -321,7 +321,7 @@ function percentageOfWorld1(population) {
     return (population / 7900) * 100;
 
 }
-/* 
+/*
 function describePopulation(country, population) {
     const percentage = percentageOfWorld1(population);
     return `${country} has ${population} million people, which is about ${percentage} % of the world.`
@@ -329,7 +329,7 @@ function describePopulation(country, population) {
 console.log(describePopulation('China', 1441));
 console.log(describePopulation('US', 332));
 console.log(describePopulation('RU', 145));
- */
+
 
 const describePopulation = function (country, population) {
     const percentage = percentageOfWorld1(population);
@@ -339,4 +339,75 @@ const describePopulation = function (country, population) {
 describePopulation('China', 1441);
 describePopulation('US', 332);
 describePopulation('Russia', 145);
+ */
+
+//LECTURE: Introduction to Arrays
+
+/* 1. Create an array containing 4 population values of 4 countries of your choice.
+You may use the values you have been using previously.Store this array into a
+variable called 'populations'
+2. Log to the console whether the array has 4 elements or not(true or false)
+3. Create an array called 'percentages' containing the percentages of the
+world population for these 4 population values.Use the function
+'percentageOfWorld1' that you created earlier to compute the 4
+percentage values */
+
+const countries = ['China', 'US', 'Russia', 'Ukraine'];
+const populations = ['1441', '332', '145', '40'];
+console.log(populations.length);
+
+if (countries.length === 4) {
+    console.log(true);
+}
+
+const percentages = new Array('1441', '332', '145', '40');
+
+const chinaPercentage = percentageOfWorld1(percentages[0]);
+const usPercentage = percentageOfWorld1(percentages[1]);
+const ruPercentage = percentageOfWorld1(percentages[2]);
+const uaPercentage = percentageOfWorld1(percentages[percentages.length - 1]);
+console.log(chinaPercentage, usPercentage, ruPercentage, uaPercentage);
+
+//LECTURE: Basic Array Operations (Methods)
+/* 1. Create an array containing all the neighbouring countries of a country of your
+choice.Choose a country which has at least 2 or 3 neighbours.Store the array
+into a variable called 'neighbours'
+2. At some point, a new country called 'Utopia' is created in the neighbourhood of
+your selected country.So add it to the end of the 'neighbours' array
+3. Unfortunately, after some time, the new country is dissolved.So remove it from
+the end of the array
+4. If the 'neighbours' array does not include the country ‘Germany’, log to the
+console: 'Probably not a central European country :D'
+5. Change the name of one of your neighbouring countries.To do that, find the
+index of the country in the 'neighbours' array, and then use that index to
+change the array at that index position.For example, you can search for
+'Sweden' in the array, and then replace it with 'Republic of Sweden'. */
+
+const neighbours = new Array('Romania', 'Serbia', 'Greece');
+
+neighbours.push('Utopia'); //add
+console.log(neighbours)
+
+neighbours.pop(); //Removing last element
+
+console.log(neighbours)
+
+if (!neighbours.includes('Germany')) {
+    console.log('Probably not a central European country :D');
+}
+
+
+console.log(neighbours.indexOf('Serbia'));
+
+neighbours.push("Republic of Serbia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+neighbours.shift();
+neighbours.shift();
+neighbours.unshift("Republic of Serbia");
+neighbours.unshift("Romania");
+console.log(neighbours);
 
