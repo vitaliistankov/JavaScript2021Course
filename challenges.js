@@ -309,23 +309,28 @@ let _bill;
 let tip;
 
 function calcTip(_bill) {
-    return (_bill >= 50 && _bill <= 300) ? tip = _bill * 15 / 100 : tip = _bill * 20 / 100;
-
-
+    return _bill >= 50 && _bill <= 300 ? _bill * 15 / 100 : _bill * 20 / 100;
 }
+
+// const calcTip => bill >= && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
 const _tip = calcTip(100);
 console.log(_tip);
 
-const bill = [125, 555, 44];
+const bills = [125, 555, 44];
 const tips = [
-    calcTip(bill[0]),
-    calcTip(bill[1]),
-    calcTip(bill[2]),
+    calcTip(bills[0]),
+    calcTip(bills[1]),
+    calcTip(bills[2]),
 ];
-console.log(tips);
 
-const total = [];
-console.log(total);
+const totals = [
+    bills[0] + tips[0],
+    bills[1] + tips[1],
+    bills[2] + tips[2]
+];
+console.log(bills, tips, totals);
+
 
 
 
