@@ -121,7 +121,7 @@ console.log(yearsUntilRetirement(1960, 'Mike')); */
 const friends = ['Michael', 'Steven', 'Peter'];
 
 //add elements
-const newLenght = friends.push('Jay');
+/* const newLenght = friends.push('Jay');
 console.log(friends);
 console.log(newLenght);
 
@@ -142,4 +142,4 @@ console.log(friends.indexOf('Steven'));
 console.log(friends.indexOf('Bob'));
 
 console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
+console.log(friends.includes('Bob')); */
