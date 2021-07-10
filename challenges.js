@@ -305,7 +305,7 @@ array) */
 
 
 
-let _bill;
+/* let _bill;
 let tip;
 
 function calcTip(_bill) {
@@ -329,7 +329,9 @@ const totals = [
     bills[1] + tips[1],
     bills[2] + tips[2]
 ];
-console.log(bills, tips, totals);
+console.log(bills, tips, totals); */
+
+//////
 
 
 
