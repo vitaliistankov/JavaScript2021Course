@@ -477,19 +477,28 @@ const myCountry = {
     language: 'Bulgarian',
     population: 7,
     neighbours: ['Romania', 'Serbia', 'Greece'],
-    isIsland: false,
+    //isIsland: false,
+
     describe: function () {
-        return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+        console.log(
+            `${this.country} has ${this.population} million 
+            ${this.language}-speaking people, 
+            ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+        );
     },
+
     checkIsland: function () {
-        return `${this.isIsland ? 'yes' : 'no'}`
+        //return `${this.isIsland ? 'yes' : 'no'}`
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+        //this.isIsland = !Boolean(this.neighbours.length);
     }
 };
 
-console.log(myCountry.describe())
-console.log(myCountry.checkIsland())
+//console.log(myCountry.describe())
+//console.log(myCountry.checkIsland())
 
-
-
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry);
 
 
