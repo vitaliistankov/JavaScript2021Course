@@ -396,7 +396,7 @@ index of the country in the 'neighbours' array, and then use that index to
 change the array at that index position.For example, you can search for
 'Sweden' in the array, and then replace it with 'Republic of Sweden'. */
 
-const neighbours = new Array('Romania', 'Serbia', 'Greece');
+//const neighbours = new Array('Romania', 'Serbia', 'Greece');
 /*
 neighbours.push('Utopia'); //add
 console.log(neighbours)
@@ -435,41 +435,60 @@ console.log(neighbours);
 properties 'country', 'capital', 'language', 'population' and
 'neighbours'(an array like we used in previous assignments)
  */
+/* const myCountry = {
+    country: 'Bulgaria',
+    capital: 'Sofia',
+    language: 'Bulgarian',
+    population: 7,
+    neighbours: ['Romania', 'Serbia', 'Greece'],
+ */
+
+// LECTURE: Dot vs. Bracket Notation
+
+// 1. Using the object from the previous assignment, log a string like this to the
+// console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
+// and a capital called Helsinki.'
+// 2. Increase the country's population by two million using dot notation, and then
+// decrease it by two million using brackets notation.
+
+//Chalenge: 'Bulgaria has 7 million bulgarian-speaking people, 3 neighbouring countries
+//and a capital called Sofia.'
+
+/* getSummary: function () {
+    return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} countries and a capital called ${this.capital}.`
+}
+};
+
+console.log(myCountry.getSummary()); */
+
+//myCountry.population = myCountry.population + 2;
+//myCountry.population += 2;
+//console.log(myCountry.population);
+//myCountry['population'];
+
+//myCountry['population'] -= 2;
+//console.log(myCountry.population);
+
+// LECTURE: Object Methods
+
 const myCountry = {
     country: 'Bulgaria',
     capital: 'Sofia',
     language: 'Bulgarian',
     population: 7,
     neighbours: ['Romania', 'Serbia', 'Greece'],
-
-
-    // LECTURE: Dot vs. Bracket Notation
-
-    // 1. Using the object from the previous assignment, log a string like this to the
-    // console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
-    // and a capital called Helsinki.'
-    // 2. Increase the country's population by two million using dot notation, and then
-    // decrease it by two million using brackets notation.
-
-    //Chalenge: 'Bulgaria has 7 million bulgarian-speaking people, 3 neighbouring countries
-    //and a capital called Sofia.'
-
-    getSummary: function () {
-        return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} countries and a capital called ${this.capital}.`
+    isIsland: false,
+    describe: function () {
+        return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    },
+    checkIsland: function () {
+        return `${this.isIsland ? 'yes' : 'no'}`
     }
 };
 
-console.log(myCountry.getSummary());
+console.log(myCountry.describe())
+console.log(myCountry.checkIsland())
 
-//myCountry.population = myCountry.population + 2;
-myCountry.population += 2;
-console.log(myCountry.population);
-//myCountry['population'];
-
-myCountry['population'] -= 2;
-console.log(myCountry.population);
-
-// LECTURE: Object Methods
 
 
 

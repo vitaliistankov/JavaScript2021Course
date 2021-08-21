@@ -221,7 +221,7 @@ const jonas = {
     },
 
     getSummary: function () {
-        return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
+        return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
 
     }
 };
