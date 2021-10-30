@@ -316,7 +316,7 @@ console.log(funcExpChinaPercentage, fincExpUsPercentage, funcExpRussiaPercentage
 2. To calculate the percentage, 'describePopulation' call the
 'percentageOfWorld1' you created earlier
 3. Call 'describePopulation' with data for 3 countries of your choice */
-
+/*
 function percentageOfWorld1(population) {
     return (population / 7900) * 100;
 
@@ -368,7 +368,7 @@ const ruPercentage = percentageOfWorld1(percentages[2]);
 const uaPercentage = percentageOfWorld1(percentages[percentages.length - 1]);
 console.log(chinaPercentage, usPercentage, ruPercentage, uaPercentage); */
 
-const populations = ['1441', '332', '145', '40'];
+/* const populations = ['1441', '332', '145', '40'];
 console.log(populations.length === 4);
 
 const percentages = [
@@ -377,7 +377,7 @@ const percentages = [
     percentageOfWorld1(populations[2]),
     percentageOfWorld1(populations[3])
 ];
-console.log(percentages);
+console.log(percentages); */
 
 
 //LECTURE: Basic Array Operations (Methods)
@@ -471,7 +471,7 @@ console.log(myCountry.getSummary()); */
 
 // LECTURE: Object Methods
 
-const myCountry = {
+/* const myCountry = {
     country: 'Bulgaria',
     capital: 'Sofia',
     language: 'Bulgarian',
@@ -500,5 +500,23 @@ const myCountry = {
 myCountry.describe();
 myCountry.checkIsland();
 console.log(myCountry);
+ */
+// LECTURE: Iteration: The for Loop
 
+for (let number = 1; number <= 50; number++) {
+    console.log(`Voter number ${number} is currently voting`);
+}
 
+// LECTURE: Looping Arrays, Breaking and Continuing
+
+const populations = ['1441', '332', '145', '40'];
+
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100;
+
+// }
+
+for (let i = 0; i < populations.length; i++) {
+    console.log(i);
+}
+//const percentages2
